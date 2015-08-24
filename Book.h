@@ -14,7 +14,7 @@
 
 @property (nonatomic, retain) NSString * author;
 @property (nonatomic, retain) NSData * coverImage;
-@property (nonatomic, retain) NSNumber * hadRead;
+@property (nonatomic, retain) NSNumber * hasRead;
 @property (nonatomic, retain) NSNumber * isReading;
 @property (nonatomic, retain) NSNumber * rating;
 @property (nonatomic, retain) NSString * review;

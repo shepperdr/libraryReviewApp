@@ -8,6 +8,7 @@
 
 #import "AllBooksTableViewDataSource.h"
 #import "BookSwitchTableViewCell.h"
+#import "BookController.h"
 
 static NSString *allBooksCellID = @"AllBooksCellID";
 
@@ -15,15 +16,23 @@ static NSString *allBooksCellID = @"AllBooksCellID";
 @implementation AllBooksTableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return [BookController sharedInstance].books.count;
     
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allBooksCellID" forIndexPath:indexPath];
+    BookSwitchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allBooksCellID"];
     
-    cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:allBooksCellID];
+    Book *book = [BookController sharedInstance].books[indexPath.row];
+    
+    cell.titleLabel.text = book.title;
+    cell.authorLabel.text = book.author;
+    if ([book.hasRead isEqualToNumber:@1]) {
+        cell.hasReadSwitch.on = YES;
+    } else {
+        cell.hasReadSwitch.on = NO;
+    }
     
     return cell;
     

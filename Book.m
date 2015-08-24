@@ -13,7 +13,7 @@
 
 @dynamic author;
 @dynamic coverImage;
-@dynamic hadRead;
+@dynamic hasRead;
 @dynamic isReading;
 @dynamic rating;
 @dynamic review;

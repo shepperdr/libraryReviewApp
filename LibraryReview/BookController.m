@@ -12,6 +12,17 @@
 
 @implementation BookController
 
++(BookController *)sharedInstance {
+    static BookController *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once (&onceToken, ^{
+        sharedInstance= [BookController new];
+        
+    });
+    return sharedInstance;
+}
+
+
 - (Book *)createBook {
     
  Book *book = [NSEntityDescription insertNewObjectForEntityForName:@"Book" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
@@ -32,6 +43,8 @@
     }
     
 }
+
+
 
 - (void)deleteBook:(Book *)bookToDelete {
     
