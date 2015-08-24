@@ -7,7 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Book.h"
 
 @interface BookController : NSObject
+
+- (Book *)createBook;
+
+@property (strong, nonatomic) NSArray *books;
+
+//Update = Pointers and Save;
+
+- (void)deleteBook:(Book *)bookToDelete;
+
 
 @end

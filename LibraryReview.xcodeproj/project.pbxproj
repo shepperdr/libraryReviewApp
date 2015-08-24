@@ -11,8 +11,10 @@
 		911ED5CD1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5CC1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m */; };
 		911ED5D01B8B8D07003EAC1F /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */; };
 		911ED5D31B8B8D84003EAC1F /* AllBooksTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */; };
-		911ED5D91B8B9363003EAC1F /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5D81B8B9363003EAC1F /* Book.m */; };
 		911ED5DC1B8B9373003EAC1F /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5DB1B8B9373003EAC1F /* BookController.m */; };
+		911ED5E01B8B95BB003EAC1F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5DF1B8B95BB003EAC1F /* Stack.m */; };
+		911ED5E31B8B97AF003EAC1F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5E11B8B97AF003EAC1F /* Model.xcdatamodeld */; };
+		911ED5E91B8B98B4003EAC1F /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5E81B8B98B4003EAC1F /* Book.m */; };
 		91BB91461B8B868300CE904A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB91451B8B868300CE904A /* main.m */; };
 		91BB91491B8B868300CE904A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB91481B8B868300CE904A /* AppDelegate.m */; };
 		91BB914C1B8B868300CE904A /* AllBooksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB914B1B8B868300CE904A /* AllBooksListViewController.m */; };
@@ -41,10 +43,13 @@
 		911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 		911ED5D11B8B8D84003EAC1F /* AllBooksTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBooksTableViewDataSource.h; sourceTree = "<group>"; };
 		911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBooksTableViewDataSource.m; sourceTree = "<group>"; };
-		911ED5D71B8B9363003EAC1F /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
-		911ED5D81B8B9363003EAC1F /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		911ED5DA1B8B9373003EAC1F /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
 		911ED5DB1B8B9373003EAC1F /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		911ED5DE1B8B95BB003EAC1F /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		911ED5DF1B8B95BB003EAC1F /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		911ED5E21B8B97AF003EAC1F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		911ED5E71B8B98B4003EAC1F /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = ../Book.h; sourceTree = "<group>"; };
+		911ED5E81B8B98B4003EAC1F /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = ../Book.m; sourceTree = "<group>"; };
 		91BB91401B8B868300CE904A /* LibraryReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BB91441B8B868300CE904A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91BB91451B8B868300CE904A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,10 +118,13 @@
 		911ED5DD1B8B9380003EAC1F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				911ED5DE1B8B95BB003EAC1F /* Stack.h */,
+				911ED5DF1B8B95BB003EAC1F /* Stack.m */,
+				911ED5E71B8B98B4003EAC1F /* Book.h */,
+				911ED5E81B8B98B4003EAC1F /* Book.m */,
 				911ED5DA1B8B9373003EAC1F /* BookController.h */,
 				911ED5DB1B8B9373003EAC1F /* BookController.m */,
-				911ED5D71B8B9363003EAC1F /* Book.h */,
-				911ED5D81B8B9363003EAC1F /* Book.m */,
+				911ED5E11B8B97AF003EAC1F /* Model.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -281,14 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				911ED5E31B8B97AF003EAC1F /* Model.xcdatamodeld in Sources */,
 				91BB914C1B8B868300CE904A /* AllBooksListViewController.m in Sources */,
 				911ED5D01B8B8D07003EAC1F /* EditBookViewController.m in Sources */,
 				91BB91491B8B868300CE904A /* AppDelegate.m in Sources */,
+				911ED5E91B8B98B4003EAC1F /* Book.m in Sources */,
 				911ED5D31B8B8D84003EAC1F /* AllBooksTableViewDataSource.m in Sources */,
 				911ED5DC1B8B9373003EAC1F /* BookController.m in Sources */,
-				911ED5D91B8B9363003EAC1F /* Book.m in Sources */,
 				911ED5CA1B8B88B8003EAC1F /* BookDetailViewController.m in Sources */,
 				911ED5CD1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m in Sources */,
+				911ED5E01B8B95BB003EAC1F /* Stack.m in Sources */,
 				91BB91461B8B868300CE904A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +506,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		911ED5E11B8B97AF003EAC1F /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				911ED5E21B8B97AF003EAC1F /* Model.xcdatamodel */,
+			);
+			currentVersion = 911ED5E21B8B97AF003EAC1F /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 91BB91381B8B868300CE904A /* Project object */;
 }

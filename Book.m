@@ -8,6 +8,16 @@
 
 #import "Book.h"
 
+
 @implementation Book
+
+@dynamic author;
+@dynamic coverImage;
+@dynamic hadRead;
+@dynamic isReading;
+@dynamic rating;
+@dynamic review;
+@dynamic summary;
+@dynamic title;
 
 @end
