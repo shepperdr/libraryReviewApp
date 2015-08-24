@@ -11,6 +11,8 @@
 		911ED5CD1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5CC1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m */; };
 		911ED5D01B8B8D07003EAC1F /* EditBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */; };
 		911ED5D31B8B8D84003EAC1F /* AllBooksTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */; };
+		911ED5D91B8B9363003EAC1F /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5D81B8B9363003EAC1F /* Book.m */; };
+		911ED5DC1B8B9373003EAC1F /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911ED5DB1B8B9373003EAC1F /* BookController.m */; };
 		91BB91461B8B868300CE904A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB91451B8B868300CE904A /* main.m */; };
 		91BB91491B8B868300CE904A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB91481B8B868300CE904A /* AppDelegate.m */; };
 		91BB914C1B8B868300CE904A /* AllBooksListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BB914B1B8B868300CE904A /* AllBooksListViewController.m */; };
@@ -39,6 +41,10 @@
 		911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBookViewController.m; sourceTree = "<group>"; };
 		911ED5D11B8B8D84003EAC1F /* AllBooksTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllBooksTableViewDataSource.h; sourceTree = "<group>"; };
 		911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllBooksTableViewDataSource.m; sourceTree = "<group>"; };
+		911ED5D71B8B9363003EAC1F /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		911ED5D81B8B9363003EAC1F /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		911ED5DA1B8B9373003EAC1F /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
+		911ED5DB1B8B9373003EAC1F /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
 		91BB91401B8B868300CE904A /* LibraryReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibraryReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91BB91441B8B868300CE904A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91BB91451B8B868300CE904A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +78,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		911ED5D41B8B92E3003EAC1F /* Book List View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91BB914A1B8B868300CE904A /* AllBooksListViewController.h */,
+				91BB914B1B8B868300CE904A /* AllBooksListViewController.m */,
+				911ED5CB1B8B8B2E003EAC1F /* BookSwitchTableViewCell.h */,
+				911ED5CC1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m */,
+				911ED5D11B8B8D84003EAC1F /* AllBooksTableViewDataSource.h */,
+				911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */,
+			);
+			name = "Book List View Controller";
+			sourceTree = "<group>";
+		};
+		911ED5D51B8B9307003EAC1F /* Edit Book View Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				911ED5CE1B8B8D07003EAC1F /* EditBookViewController.h */,
+				911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */,
+			);
+			name = "Edit Book View Contoller";
+			sourceTree = "<group>";
+		};
+		911ED5D61B8B933B003EAC1F /* Detail Book View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				911ED5C81B8B88B8003EAC1F /* BookDetailViewController.h */,
+				911ED5C91B8B88B8003EAC1F /* BookDetailViewController.m */,
+				911ED5DD1B8B9380003EAC1F /* Model */,
+			);
+			name = "Detail Book View Controller";
+			sourceTree = "<group>";
+		};
+		911ED5DD1B8B9380003EAC1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				911ED5DA1B8B9373003EAC1F /* BookController.h */,
+				911ED5DB1B8B9373003EAC1F /* BookController.m */,
+				911ED5D71B8B9363003EAC1F /* Book.h */,
+				911ED5D81B8B9363003EAC1F /* Book.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		91BB91371B8B868300CE904A = {
 			isa = PBXGroup;
 			children = (
@@ -95,16 +144,9 @@
 			children = (
 				91BB91471B8B868300CE904A /* AppDelegate.h */,
 				91BB91481B8B868300CE904A /* AppDelegate.m */,
-				91BB914A1B8B868300CE904A /* AllBooksListViewController.h */,
-				91BB914B1B8B868300CE904A /* AllBooksListViewController.m */,
-				911ED5C81B8B88B8003EAC1F /* BookDetailViewController.h */,
-				911ED5C91B8B88B8003EAC1F /* BookDetailViewController.m */,
-				911ED5CB1B8B8B2E003EAC1F /* BookSwitchTableViewCell.h */,
-				911ED5CC1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m */,
-				911ED5D11B8B8D84003EAC1F /* AllBooksTableViewDataSource.h */,
-				911ED5D21B8B8D84003EAC1F /* AllBooksTableViewDataSource.m */,
-				911ED5CE1B8B8D07003EAC1F /* EditBookViewController.h */,
-				911ED5CF1B8B8D07003EAC1F /* EditBookViewController.m */,
+				911ED5D61B8B933B003EAC1F /* Detail Book View Controller */,
+				911ED5D41B8B92E3003EAC1F /* Book List View Controller */,
+				911ED5D51B8B9307003EAC1F /* Edit Book View Contoller */,
 				91BB914D1B8B868300CE904A /* Main.storyboard */,
 				91BB91501B8B868300CE904A /* Images.xcassets */,
 				91BB91521B8B868300CE904A /* LaunchScreen.xib */,
@@ -243,6 +285,8 @@
 				911ED5D01B8B8D07003EAC1F /* EditBookViewController.m in Sources */,
 				91BB91491B8B868300CE904A /* AppDelegate.m in Sources */,
 				911ED5D31B8B8D84003EAC1F /* AllBooksTableViewDataSource.m in Sources */,
+				911ED5DC1B8B9373003EAC1F /* BookController.m in Sources */,
+				911ED5D91B8B9363003EAC1F /* Book.m in Sources */,
 				911ED5CA1B8B88B8003EAC1F /* BookDetailViewController.m in Sources */,
 				911ED5CD1B8B8B2E003EAC1F /* BookSwitchTableViewCell.m in Sources */,
 				91BB91461B8B868300CE904A /* main.m in Sources */,
